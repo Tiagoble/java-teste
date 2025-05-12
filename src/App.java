@@ -43,6 +43,8 @@ public class App {
             System.out.println();
         }
 
+
+        //Matriz aleatoria
         Random random = new Random();
 
         int[][] matrizCencoPorCinco = new int [5][5];
