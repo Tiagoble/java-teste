@@ -18,10 +18,26 @@ public class App {
         matriz[2][1] = 8;
         matriz[2][2] = 9;
 
-        int[][] mat = {{1, 2, 3},
-                       {4, 5, 6},
-                       {7, 8, 9}};
+        int[][] mat = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}};
+        
+        
+        System.out.println("imprimindo a primeira linha");
+        
+        for(int i = 0; i < 3; i++){
+            System.out.print(" "+mat[0][i]);
+        }
+        System.out.println();
 
-        System.out.println(mat[0][0]+" "+mat[0][1]+" "+mat[0][2]);
+        System.out.println("Imprimindo a matriz inteira");
+
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.print(" "+mat[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
