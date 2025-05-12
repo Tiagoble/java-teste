@@ -1,3 +1,6 @@
+import java.util.Random;
+
+
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -36,6 +39,24 @@ public class App {
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 System.out.print(" "+mat[i][j]);
+            }
+            System.out.println();
+        }
+
+        Random random = new Random();
+
+        int[][] matrizCencoPorCinco = new int [5][5];
+
+        for(int i = 0; i < matrizCencoPorCinco.length; i++){
+            for (int j = 0; j < matrizCencoPorCinco[i].length; j++) {
+                matrizCencoPorCinco[i][j] = (int) random.nextInt(20*2);
+            }
+        }
+
+        System.out.println("Imprimindo matriz aleatoria");
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.print(" "+matrizCencoPorCinco[i][j]);
             }
             System.out.println();
         }
