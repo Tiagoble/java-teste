@@ -47,18 +47,18 @@ public class App {
         //Matriz aleatoria
         Random random = new Random();
 
-        int[][] matrizCencoPorCinco = new int [5][5];
+        int[][] matrizCincoPorCinco = new int [5][5];
 
-        for(int i = 0; i < matrizCencoPorCinco.length; i++){
-            for (int j = 0; j < matrizCencoPorCinco[i].length; j++) {
-                matrizCencoPorCinco[i][j] = (int) random.nextInt(20*2);
+        for(int i = 0; i < matrizCincoPorCinco.length; i++){
+            for (int j = 0; j < matrizCincoPorCinco[i].length; j++) {
+                matrizCincoPorCinco[i][j] = (int) random.nextInt(20*2);
             }
         }
 
         System.out.println("Imprimindo matriz aleatoria");
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
-                System.out.print(" "+matrizCencoPorCinco[i][j]);
+                System.out.print(" "+matrizCincoPorCinco[i][j]);
             }
             System.out.println();
         }
