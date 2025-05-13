@@ -62,5 +62,7 @@ public class App {
             }
             System.out.println();
         }
+
+        User usuario1 = new User();
     }
 }
