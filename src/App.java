@@ -64,5 +64,6 @@ public class App {
         }
 
         User usuario1 = new User();
+        usuario1.name = "John"; 
     }
 }
