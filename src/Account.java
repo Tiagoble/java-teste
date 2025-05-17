@@ -1,9 +1,21 @@
 public class Account {
-    String name;
-    int accountNumber;
-    double balance = 0;
+    private String name;
+    private int accountNumber;
+    private double balance = 0;
     final double WITHDRAWAL_LIMIT = 500;
     
+    public Account(String name, int accountNumber, double balance){
+        this.name=name;
+        this.accountNumber=accountNumber;
+        this.balance=balance;
+
+    }
+
+    public Account(int accountNumber, double balance){
+        this.accountNumber=accountNumber;
+        this.balance=balance;
+    }
+
     public void printAccountInfo(){
         System.out.println("User: "+name);
         System.out.println("Account number: "+accountNumber);

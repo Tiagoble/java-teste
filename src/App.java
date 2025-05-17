@@ -63,7 +63,9 @@ public class App {
             System.out.println();
         }
 
-        User usuario1 = new User();
-        usuario1.name = "John"; 
+        User usuario1 = new User("john", 1);
+        
+        
+        
     }
 }
